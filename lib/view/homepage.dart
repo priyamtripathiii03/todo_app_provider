@@ -19,8 +19,8 @@ class QuoteHomePage extends StatelessWidget {
         shadowColor: Colors.black,
         centerTitle: true,
         title: Text(
-          "Quotes",
-          style: TextStyle(color: Colors.white),
+          "Todo App",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),
         ),
       ),
       body: ListView.builder(
@@ -50,7 +50,7 @@ class QuoteHomePage extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              title: const Text('Add "Quote"'),
+              title: const Text('Add Details'),
               content: Container(
                 height: 120,
 
@@ -59,12 +59,12 @@ class QuoteHomePage extends StatelessWidget {
                     children: [
                       TextField(
                         controller: txtQuotes,
-                        decoration: const InputDecoration(label: Text('Quote')),
+                        decoration: const InputDecoration(label: Text('Description')),
                       ),
                       TextField(
                         controller: txtAuthor,
                         decoration:
-                            const InputDecoration(label: Text('Author')),
+                            const InputDecoration(label: Text('Name')),
                       ),
                     ],
                   ),
