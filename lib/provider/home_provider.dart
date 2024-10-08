@@ -2,25 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:todo_app_provider/Modals/modal.dart';
 class  QuoteProvider extends ChangeNotifier
 {
-  List QuoteData=[];
-  List<controllerModal> QuotefinalList=[];
+  List yourData=[];
+  List<ControllerModal> dataFinalList=[];
   QuoteProvider()
   {
-    StoreData();
+    storeData();
   }
-  void addData(controllerModal  addData)
+  void addData(ControllerModal  addData)
   {
-    QuotefinalList.insert(0,addData);
+    dataFinalList.insert(0,addData);
     notifyListeners();
   }
   void removeData(int index)
   {
-    QuotefinalList.removeAt(index);
+    dataFinalList.removeAt(index);
     notifyListeners();
   }
-  void StoreData()
+  void storeData()
   {
-    QuotefinalList=QuoteData.map((e) => controllerModal.from(e),).toList();
+    dataFinalList=yourData.map((e) => ControllerModal.from(e),).toList();
     notifyListeners();
   }
 

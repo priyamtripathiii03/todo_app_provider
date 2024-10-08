@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class controllerModal {
-  String? quote;
-  String? author;
+class ControllerModal {
+  String? description;
+  String? name;
 
-  controllerModal({
-    this.quote,
-    this.author,
+  ControllerModal({
+    this.description,
+    this.name,
   });
 
-  factory controllerModal.from(Map m1) {
-    return controllerModal(quote: m1['quote'], author: m1['author']);
+  factory ControllerModal.from(Map m1) {
+    return ControllerModal(description: m1['description'], name: m1['name']);
   }
 }
 
-TextEditingController txtQuotes = TextEditingController();
-TextEditingController txtAuthor = TextEditingController();
+TextEditingController txtDescription = TextEditingController();
+TextEditingController txtName = TextEditingController();

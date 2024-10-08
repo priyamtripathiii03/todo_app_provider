@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => QuoteProvider(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: QuoteHomePage(),
+        home: HomePage(),
       ),
     );
   }

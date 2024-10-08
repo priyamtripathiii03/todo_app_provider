@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:todo_app_provider/Modals/modal.dart';
 import 'package:todo_app_provider/provider/home_provider.dart';
 
-class QuoteHomePage extends StatelessWidget {
-  const QuoteHomePage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +18,21 @@ class QuoteHomePage extends StatelessWidget {
         elevation: 5,
         shadowColor: Colors.black,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Todo App",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),
+          style: TextStyle(color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 30),
         ),
       ),
       body: ListView.builder(
-        itemCount: quoteProvidertrue.QuotefinalList.length,
+        itemCount: quoteProvidertrue.dataFinalList.length,
         itemBuilder: (context, index) => Card(
           child: ListTile(
             // leading: Text(index.toString()),
-            title: Text(quoteProvidertrue.QuotefinalList[index].quote!),
+            title: Text(quoteProvidertrue.dataFinalList[index].description!),
             subtitle: Text(
-              quoteProvidertrue.QuotefinalList[index].author!,
+              quoteProvidertrue.dataFinalList[index].name!,
               style: const TextStyle(
                   color: Colors.black, fontWeight: FontWeight.bold),
             ),
@@ -45,26 +47,25 @@ class QuoteHomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          TextEditingController txtQuotes = TextEditingController();
-          TextEditingController txtAuthor = TextEditingController();
+          TextEditingController txtDescription = TextEditingController();
+          TextEditingController txtName = TextEditingController();
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
               title: const Text('Add Details'),
               content: Container(
                 height: 120,
-
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
                       TextField(
-                        controller: txtQuotes,
-                        decoration: const InputDecoration(label: Text('Description')),
+                        controller: txtDescription,
+                        decoration: const InputDecoration(label: Text('Description'),),
                       ),
                       TextField(
-                        controller: txtAuthor,
+                        controller: txtName,
                         decoration:
-                            const InputDecoration(label: Text('Name')),
+                            const InputDecoration(label: Text('Name'),),
                       ),
                     ],
                   ),
@@ -75,12 +76,13 @@ class QuoteHomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: const Text('Delete')),
+                    child: const Text('Delete'),
+                ),
                 TextButton(
                   onPressed: () {
-                    controllerModal model = controllerModal(
-                      quote: txtQuotes.text,
-                      author: txtAuthor.text,
+                    ControllerModal model = ControllerModal(
+                      description: txtDescription.text,
+                      name: txtName.text,
                     );
                     quoteProviderfalse.addData(model);
                     Navigator.pop(context);
