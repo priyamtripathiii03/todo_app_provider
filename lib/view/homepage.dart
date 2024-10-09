@@ -36,11 +36,22 @@ class HomePage extends StatelessWidget {
               style: const TextStyle(
                   color: Colors.black, fontWeight: FontWeight.bold),
             ),
-            trailing: IconButton(
-              onPressed: () {
-                quoteProviderfalse.removeData(index);
-              },
-              icon: const Icon(Icons.delete),
+            trailing: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton(
+                  onPressed: () {
+                    quoteProviderfalse.removeData(index);
+                  },
+                  icon: const Icon(Icons.edit),
+                ),IconButton(
+                  onPressed: () {
+                    quoteProviderfalse.removeData(index);
+                  },
+                  icon: const Icon(Icons.delete),
+                ),
+              ],
             ),
           ),
         ),
