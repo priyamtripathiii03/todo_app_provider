@@ -1,16 +1,8 @@
-# todo_app_provider
+# Todo App With Provider
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p>
+  <img src="https://github.com/user-attachments/assets/b324d46f-22a6-43ef-8509-c68692dba2f9" width="22%">
+    <img src="https://github.com/user-attachments/assets/ba527573-5d1a-49f3-acaf-407a3861737d" width="22%">
+  
+</p>
