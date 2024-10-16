@@ -19,14 +19,20 @@ Welcome to Todo Master, the perfect app to keep your tasks organized and boost y
 Download Todo Master today and take control of your tasks! 🎉
 
 <p>
-  <img src="https://github.com/user-attachments/assets/b324d46f-22a6-43ef-8509-c68692dba2f9" width="22%">
-    <img src="https://github.com/user-attachments/assets/ba527573-5d1a-49f3-acaf-407a3861737d" width="22%">
-     <img src="https://github.com/user-attachments/assets/028f77e7-66ef-4d46-bbb5-1a74ad1347ea" width="22%">
+    <img src="https://github.com/user-attachments/assets/bab8c5c8-6fdc-48dc-aad4-dcb30e84b8bc" width="22%">
+   <img src="https://github.com/user-attachments/assets/475de848-daa4-4585-be71-3d00c1811ca8" width="22%">
+   <img src="https://github.com/user-attachments/assets/beca5d97-a4b2-4edf-b8c7-0523c7b48cd2" width="22%">
+   <img src="https://github.com/user-attachments/assets/915e9ddc-82bc-4416-8615-e6792b057a0a" width="22%">
+   
   
 </p>
 
 
 
-https://github.com/user-attachments/assets/c21284ce-eeeb-4fd8-a8cc-210082f4ad65
+https://github.com/user-attachments/assets/5b6b0dbe-cf2c-4509-b3a3-c000b8e8c830
+
+
+
+
 
 
